@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL&family=Tiny5&display=swap');
+
+nav {
+    height: 60px;
+    width: 100%;
+    /* background-color: rgb(155, 167, 160); */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 0 25px rgb(66, 65, 65);
+}
+
+.links-conteiner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    margin: auto;
+}
+
+nav a {
+    /* height: 100%; */
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+    /* background-color: #7dffad; */
+    width: 100%;
+    height: 50px;
+
+}
+
+.navbar-contact {
+    color: yellow;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+}
+
+.navbar-gallery {
+    color: yellow;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+}
+
+.navbar-home {
+    color: yellow;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+}
+
+nav a:focus {
+    color: yellow;
+    border-radius: 10px;
+    background-color: rgb(12, 12, 12);
+}
+
+
+#sidebar-active {
+    display: none;
+}
+
+.open-sidebar, .close-sidebar {
+    display: none;
+}
+
+.logo {
+    padding-left: 20px;
+    margin-right: auto;
+    align-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    color: rgb(14, 13, 13);
+    /* font-family: "Tiny5"; */
+}
+
+/* .logo:hover {
+    color: rgb(88, 86, 86);
+} */
+
+span{
+    font-family: monaco;
+    color: rgb(255, 238, 0);
+    font-weight: bold;
+    font-family: "Times New Roman";
+}
+
+/* span:hover {
+    color: rgb(114, 114, 114);
+} */
+
+
+/* HALAMAN BERANDA */
+.home {
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    /* gap: 7em; */
+    background-image:url(bgg.png);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.home-content {
+   background-color: rgba(250, 250, 250, 0.808);
+   align-content: center;
+    margin-left: 350px;
+    color: rgb(20, 21, 22);
+    height: 100VH;
+    width: 400px;
+    align-content: center;
+    padding: 30px;
+}
+.home-content h1 {
+    font-weight: normal;
+    font-family: momonster;
+    font-size: 62px;
+    line-height: 1.2;
+    color: rgb(14, 15, 15);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.home-content h2 {
+    font-family: Gill Sans;
+    margin-bottom: -20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: rgb(68, 68, 68);
+    font-family: monospace;
+}
+
+.img-box img {
+    width: 250px;
+    margin-right: 40PX;
+ 
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 247, 247);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(177, 177, 177);
+    width: 50px;
+}
+
+/* halaman kedua */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    background: rgb(177, 176, 176);
+    flex-direction: row-reverse;
+}
+
+.about img {
+    width: 300px;
+    box-shadow: 0 0 25px rgb(102, 101, 101),
+                0 0 50px rgb(29, 28, 28);
+    border-radius: 20PX;      
+}
+
+
+.about-content h2 {
+    text-align: left;
+    color: orangered;
+    font-size: 32px;
+}
+.about-content h3 {
+    font-size: 62px;
+    color: white;
+}
+.about-content p {
+    color: rgb(15, 15, 15);
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+
+/* HALAMAN KETIGA */
+
+.skills {
+    display: flex;
+    padding: 12% 8%;
+    gap: 10em;
+    background: rgb(54, 53, 53);
+    text-align: start;
+    width: 100%;;
+    
+}
+
+.skills img {
+    width: 400px;
+    box-shadow: 0 0 25px rgb(100, 100, 99),
+                0 0 50px rgb(245, 245, 245);
+    border-radius: 20PX;      
+}
+
+
+.skills-content h2 {
+    color: orangered;
+    font-size: 32px;
+}
+
+.skills-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+
+}
+/* HALAMAN KEEMPAT */
+
+.gallery {
+    max-width: 100% auto;
+    /* margin: 20px; */
+    background-color: black;
+}
+
+.gallery .title {
+    font-size: 25px;
+    background-color: rgb(92, 91, 91);
+    color: azure;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 15px;
+    padding-top: 80px;
+    align-content: center;
+}
+
+.image-container img {
+    width: 500px;
+}
+
+.gallery .image-container {
+    columns:3 250px ;
+    gap: 15px;
+}
+
+.gallery .image-container img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+/* HALAMAN KELIMA */
+
+.contact {
+    background-color: rgb(98, 99, 156);
+    width: 100%;
+    /* height: 100vh; */
+    align-content: center;
+    padding-left: 20%;
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.contact-right img {
+    border-radius: 50%;
+    width: 300px;
+    position: relative;
+    left: 600px;
+    bottom: 359px;
+
+    box-shadow: 0 0 25px rgb(98, 99, 156),
+                0 0 50px rgb(255, 255, 255);
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-title h2 {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-bottom: 5px;
+    padding-top: 200px;
+    /* margin-top: 400px; */
+}
+
+.contact-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: rgb(255, 230, 1);
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid orangered;
+}
+
+.contact-inputs::placeholder {
+    color: rgb(39, 38, 38);
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: aliceblue;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,yellow,orangered);
+    cursor: pointer;
+    width: 130px;
+}
+
+
+
+/* .logo-app2 {
+    display: none;
+
+} */
+
+.fa-brands.fa-whatsapp {
+    font-size: 30px;
+    align-content: center;
+    color: #15e762;
+    }
+
+    .fa-brands.fa-whatsapp:hover {
+        color: #7dffad;
+    }    
+
+    .fa-brands.fa-instagram {
+    font-size: 30px;
+    align-content: center;
+    color:#ff0080;
+    font-weight: bold;
+    }
+
+    .fa-brands.fa-instagram:hover {
+        color: #fab8d6;
+    } 
+
+    .fa-brands.fa-x-twitter {
+        font-size: 30px;
+        align-content: center;
+        color: black;
+    }
+
+    .fa-brands.fa-x-twitter:hover {
+        color: #ffffff;
+    }
+
+@media(max-width: 834px) {
+
+    /* NAVBAR */
+
+    /* .icons1 {
+        display: none;
+    } */
+
+
+    .links-conteiner { 
+        /* display: none; */
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 65%;
+        height: 100%;
+    
+        background-color: rgb(139, 139, 139);
+        box-shadow: -5px 0 5px rgb(110, 109, 109);
+        transition: .70s ease-out;
+    }
+
+    nav a {
+        box-sizing: border-box;
+        height: 100px;
+        padding: 20px 50%;
+        justify-content: flex-start;
+        width: 400px;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .fa-brands.fa-whatsapp {
+    font-size: 30px;
+    align-content: center;
+    color: #25d366;
+    }
+
+    .fa-brands.fa-instagram {
+    font-size: 30px;
+    align-content: center;
+    color:#dd2a7b;
+    }
+
+    .fa-brands.fa-x-twitter {
+        font-size: 30px;
+        align-content: center;
+        color:#0a0a0a;
+    }
+
+    nav a:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgba(228, 228, 228, 0.432);
+    }
+    
+
+    .open-sidebar, .close-sidebar {
+        display: block;
+    }
+
+    #sidebar-active:checked ~ .links-conteiner {
+      right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+  
+  
+ 
+
+/* HALAMAN BERANDA */
+
+.home-content {
+    margin-left: 1px;
+     width: 300px;
+ }
+
+ .home-content h1 {
+    padding-top: 100px;
+ }
+
+ /* HALAMAN KEDUA */
+
+ .about-content h2 {
+    font-size: 20px;
+ }
+
+ .about-content h3 {
+    font-size: 39px;
+ }
+
+.about img {
+    width: 200px;
+    margin-bottom: -90px;
+}
+
+ .about {
+    flex-direction: column;
+ }
+
+/* HALAMAN KETIGA */
+
+.skills {
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.skills IMG {
+    width: 200PX;
+    align-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+/* HALAMAN KEEMPAT */
+
+.gallery .title {
+    padding-top: 15PX;
+}
+/* HALAMAN KELIMA */
+
+.contact {
+    padding-left: 15px;
+    height: 100vh;
+}
+
+.contact-right img {
+    display: none;
+}
+
+.contact-inputs {
+    width: 300px;
+}
+
+.contact-title h2 {
+    padding-top: 20px;
+}
+
+.contact-left button {
+    margin-bottom: 70px;
+}
+}
